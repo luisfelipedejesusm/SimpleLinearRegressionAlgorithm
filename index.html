@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<strong>Data de prueba: </strong>
+<p>
+	{x: 1, y: 1}
+	<br>
+	{x: 2, y: 3}
+	<br>
+	{x: 4, y: 3}
+	<br>
+	{x: 3, y: 2}
+	<br>
+	{x: 5, y: 5}
+</p>
+<br>
+<strong>Formula: </strong>
+<br>
+<img src="lrf.png">
+<br>
+<br>
+<br>
+<strong>Ingrese una X para estimar una Y en base a la data obtenida</strong>
+<input type="text" id="x">
+<button onclick="document.getElementById('estimacion').innerHTML = new LinearPrediction(document.getElementById('x').value).getPrediction()">Estimar</button>
+<br>
+<strong>Estimacion: <span id="estimacion"></span></strong>
+<script src="javascript.js"></script>
+</body>
+</html>
